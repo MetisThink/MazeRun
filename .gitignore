@@ -1,0 +1,86 @@
+
+# Ignore IDE stuff
+.vs
+.idea/
+.vscode
+*.sln
+*.code-workspace
+*.vcxproj
+*.xcworkspace
+*.xcodeproj
+*.csproj.*
+
+# Ignore generated folders
+/Binaries/*
+/Build/*
+/Intermediate/*
+/DerivedDataCache/*
+/LocalDerivedDataCache/*
+/Saved/*
+/FileOpenOrder/*
+
+# Ignore generated folders for plugins
+/Plugins/**/Binaries/*
+/Plugins/**/Build/*
+/Plugins/**/Intermediate/*
+/Plugins/**/DerivedDataCache/*
+/Plugins/**/Saved/*
+
+# Don't ignore editor project files
+!/Binaries/**/UE4Editor-*.dll
+!/Binaries/**/UE4Editor-*.dylib
+!/Binaries/**/UE4Editor.modules
+!/Binaries/**/*Editor.target
+
+# Don't ignore editor project files for plugins
+!/Plugins/**/Binaries/**/*.dll
+!/Plugins/**/Binaries/**/*.dylib
+!/Plugins/**/Binaries/**/UE4Editor.modules
+!/Plugins/**/Binaries/**/*Editor.target
+
+# Don't ignore important files in Build
+!/Build/Linux
+!/Build/Windows
+!/Build/Android/*.keystore
+
+# Ignore hotreload files
+/Binaries/**/UE4Editor-*-[0-9][0-9][0-9][0-9].dll
+/Binaries/**/UE4Editor-*-[0-9][0-9][0-9][0-9].dylib
+/Plugins/**/Binaries/**/UE4Editor-*-[0-9][0-9][0-9][0-9].dll
+/Plugins/**/Binaries/**/UE4Editor-*-[0-9][0-9][0-9][0-9].dylib
+
+# Ignore OS explorer files
+.DS_Store
+[Tt]humbs.db
+
+# Ignore Unix backup files
+*~
+
+# Ignore crash reports
+crashinfo--*
+
+# Ignore linux project files
+*.user
+*.pro
+*.pri
+*.kdev4
+
+# Ignore build files
+*.exp
+*.hotreload
+*.pdb
+*.suo
+*.opensdf
+*.sdf
+*.tmp
+*.mdb
+*-Debug.*
+*-DebugGame.*
+
+# Ignore intermediary files
+*.target.xml
+*.exe.config
+*.exe.manifest
+obj/
+*.tmp
+*.vsconfig
